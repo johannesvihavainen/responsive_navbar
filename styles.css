@@ -101,4 +101,18 @@ ul {
     .nav-links ul {
         display: none;
     }
+    .socials {
+        display: none;
+    }
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
 }

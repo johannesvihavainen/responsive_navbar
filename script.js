@@ -65,6 +65,42 @@ function createLinks() {
         liLinks.innerHTML = links[i]["link"];
         ul.appendChild(liLinks);
     }
+
+
+
+    var socialLinks = [
+        {
+            link: '<a href=""><img src="photos/facebook.png" alt=""></a>'
+        },
+        {
+            link: '<a href=""><img src="photos/ig.png" alt=""></a>'
+        },
+        {
+            link: '<a href=""><img src="photos/linkedin.png" alt=""></a>'
+        },
+        {
+            link: '<a href=""><img src="photos/twitter.png" alt=""></a>'
+        }
+    ]
+
+    const socials = document.createElement('div');
+    socials.classList.add('socials');
+    newDiv.appendChild(socials);
+    const ulSocials = document.createElement('ul');
+    socials.appendChild(ulSocials);
+
+    for (var i = 0; i < socialLinks.length; i++) {
+        const liSocials = document.createElement('li');
+        liSocials.innerHTML = socialLinks[i]["link"];
+        ulSocials.appendChild(liSocials);
+    }
+
+
+
 }
+
+
+
+
 
 
